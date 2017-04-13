@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="MainTopBorder" layoutX="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox fx:id="CalnderSpace" prefWidth="800.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <BorderPane fx:id="ToppInfoPlace" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <left>
+                  <Button fx:id="LeftCalender" mnemonicParsing="false" text="&lt;- left" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Button fx:id="RightCalender" mnemonicParsing="false" text="right -&gt;" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Calender for xxxx" />
+                        <Text fx:id="infoText" strokeType="OUTSIDE" strokeWidth="0.0" text="nothing her" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
